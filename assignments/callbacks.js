@@ -43,6 +43,10 @@ getLength(items, function(getLength) {
 } )                                                             // why close parenthesis here instead of next to getLenght parameters?
                                                                  //missing ) after "argument list"
 
+//console.log(`this is a test of ${items.pop()}`);              
+                                                                //array.pop() gets rid of last item, mutates the array, if you run it again,
+                                                                //array[array.length-1]=== original_array[array.length-2]
+
 //Problem 2:
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
@@ -55,18 +59,38 @@ last(items, function(last) {
                                                                 // Because THE ENTIRE FUNCTION *is* THE ARGUMENT !!
 //invocation 2
 
+//PROBLEM 3
+
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
+  return cb(x+y);
 }
+
+sumNums(3, 4, function(sumNums) {                               //function defined on 64, why am I retyping the entire thing as an argument??
+  console.log(sumNums);
+})
+
+
+//PROBLEM 4
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
+  return cb(x*y);
 }
+
+multiplyNums(400,50, function (multiplyNums) {
+  console.log(multiplyNums);
+})
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  return list.includes(item);
 }
+
+contains("Gum",items, function (contains) {
+  console.log(contains);
+})
 
 /* STRETCH PROBLEM */
 
