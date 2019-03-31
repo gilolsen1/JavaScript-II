@@ -101,11 +101,10 @@ console.log(largeShirts);
 //runners.forEach(runner => ticketPriceTotal.push(runners.donation));           attempt
 //let ticketPriceTotal= (accumulator, currentValue) => currentValue;            attempt off MDN
 
-const ticketPriceTotal = runners.reduce((totalnuts, runner) => {                    //copied from training kit and used as training wheels
-    return totalnuts += runner.donation;                                            //need further understanding
-  }, 0);
+const ticketPriceTotal = runners.reduce((total, runner) => {                    //copied from training kit and used as training wheels
+    return total += runner.donation;                                            //need further understanding
+  }, 0);                                                                            // compare to MDN reducer==ticketpriceTotal, what is accumulator, currentValue)
 
-console.log(runner);
 console.log(ticketPriceTotal);
 
 // ==== Challenge 5: Be Creative ====

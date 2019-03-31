@@ -38,7 +38,7 @@ const result= add5(6);
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
-// ==== Challenge 2: Create a counter function ====
+// ==== Challenge 2: Create a counter function ====      // WORKED ON THIS IN AFTER HOURS
 const counter = () => {
   // Return a function  ( return ()=> {}) that when invoked increments and returns a current count.
   let count=0;

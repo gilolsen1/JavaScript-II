@@ -90,7 +90,7 @@ function contains(item, list, cb) {
 
 contains("Gum",items, function (contains) {
   console.log(contains);
-})
+})                                                              //NOTHING HAPPENING IN CONSOLE???
 
 /* STRETCH PROBLEM */
 
