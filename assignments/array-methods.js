@@ -91,25 +91,32 @@ console.log(largeShirts);
 // The donations need to be tallied up and reported for tax purposes. 
 //Add up all the donations into a ticketPriceTotal array and log the result
 
-let ticketPriceTotal = [4,5,6]
+//let ticketPriceTotal = []
 //create an array
 //populate the array with each runners.donation
 //reduce that array to single total
 
-ticketPriceTotal.reduce();
+//ticketPriceTotal.reduce(runner => accumlator + runner.donation[]);
 
 //runners.forEach(runner => ticketPriceTotal.push(runners.donation));           attempt
 //let ticketPriceTotal= (accumulator, currentValue) => currentValue;            attempt off MDN
 
+const ticketPriceTotal = runners.reduce((totalnuts, runner) => {                    //copied from training kit and used as training wheels
+    return totalnuts += runner.donation;                                            //need further understanding
+  }, 0);
 
-
+console.log(runner);
 console.log(ticketPriceTotal);
 
 // ==== Challenge 5: Be Creative ====
-// Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
+// Now that you have used .forEach(), .map(), .filter(), and .reduce().  
+//I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  
+//Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
+//write email to size l people thank them for donation, include total
 
 // Problem 2
+//
 
 // Problem 3
